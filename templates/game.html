@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <style>
+        body { 
+            text-align: center; 
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+        .game-container {
+            margin: 20px auto;
+            width: 502px;
+        }
+        #game-frame {
+            border: 2px solid #333;
+            background: #000;
+        }
+        .controls {
+            margin: 15px 0;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Snake Game 🐍</h1>
+    
+    <div class="controls">
+        <p>Use <strong>Arrow Keys</strong> to control the snake</p>
+    </div>
+    
+    <div class="game-container">
+        <!-- This will be automatically replaced by Flask -->
+        {{ game_content|safe }}
+    </div>
+
+    <script>
+        // Auto-refresh every 2 seconds if connection fails
+        setTimeout(function(){
+            if(document.getElementById('game-frame') === null) {
+                window.location.reload();
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
