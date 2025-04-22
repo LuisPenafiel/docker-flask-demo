@@ -21,9 +21,10 @@ Open http://localhost:5000 in your browser
 ├── Dockerfile             
 ├── requirements.txt
 └── templates/
-    └── game.html          
+    └── game.html 
 
-##🛠️ Troubleshooting
+## 🛠️  Troubleshooting    
+
 No game window? Expected in Docker - use the web interface
 
 502 Error? Wait a few seconds for Flask to start
