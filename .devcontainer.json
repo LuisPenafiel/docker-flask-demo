@@ -1,18 +1,17 @@
 {
   "name": "Flask Docker Dev Container",
   "build": {
-    "dockerfile": "../Dockerfile", // Path to your Dockerfile
-    "context": ".."               // Root of your project
+    "dockerfile": "Dockerfile",
+    "context": "."
   },
-  "forwardPorts": [5000],        // Expose Flask's port
+  "forwardPorts": [8080],
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-python.python",       // Python support
-        "ms-azuretools.vscode-docker" // Docker extension
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
       ]
     }
   },
-  "remoteUser": "vscode",         // Best practice (non-root user)
-  "postCreateCommand": "pip install -r requirements.txt" // Optional
+  "postCreateCommand": "pip install -r requirements.txt"
 }
