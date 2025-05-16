@@ -1,7 +1,5 @@
 # Snake Game 🐍
 
-![Snake Game](https://via.placeholder.com/800x400.png?text=Snake+Game+Preview)
-
 A classic Snake game built with Flask, JavaScript, and Docker. The game features a retro arcade style with background music, a scoring system, and responsive controls. It is deployed on Render for public access.
 
 ## Table of Contents
